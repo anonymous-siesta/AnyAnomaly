@@ -1,1 +1,2 @@
 # AnyAnomaly
+AnyAnomaly: Zero-Shot Customizable Video Anomaly Detection with LVLM
