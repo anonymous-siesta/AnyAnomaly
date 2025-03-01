@@ -28,3 +28,70 @@ Comparison of the proposed model with the baseline. Both models perform C-VAD, b
 | **People and car<br/> accident** |![c1](https://github.com/user-attachments/assets/eed1252a-59dd-412c-ab3d-00b71d7bb852)|
 | **Jaywalking** |![c2](https://github.com/user-attachments/assets/f6205335-bebc-4df2-bd40-d06cc62d2a56)|
 | **Walking<br/> drunk** |![c3](https://github.com/user-attachments/assets/eb450801-b700-419d-a920-2799553c2452)|
+
+## 1. Requirements and Installation For ChatUniVi
+- ```Chat-UniVi```: [[GitHub]](https://github.com/PKU-YuanGroup/Chat-UniVi)
+- weights: Chat-UniVi 7B [[Huggingface]](https://huggingface.co/Chat-UniVi/Chat-UniVi/tree/main), Chat-UniVi 13B [[Huggingface]](https://huggingface.co/Chat-UniVi/Chat-UniVi-13B/tree/main)
+- Install required packages:
+```bash
+git clone https://github.com/PKU-YuanGroup/Chat-UniVi
+cd Chat-UniVi
+conda create -n chatunivi python=3.10 -y
+conda activate chatunivi
+pip install --upgrade pip
+pip install -e .
+pip install numpy==1.24.3
+
+# Download the Model (Chat-UniVi 7B)
+mkdir weights
+cd weights
+sudo apt-get install git-lfs
+git lfs install
+git lfs clone https://huggingface.co/Chat-UniVi/Chat-UniVi
+
+# Download extra packages
+cd ../../
+pip install -r requirements.txt
+```
+
+
+## Command
+- ```avenue type```: [too_close, bicycle, throwing, running, dancing]
+- ```shtech type```: [car, bicycle, fighting, throwing, hand_truck, running, skateboarding, falling, jumping, loitering, motorcycle]
+```Shell
+# Baseline model (Chat-UniVi) -> Customizable-STC
+python -u vad_chatunivi.py --dataset=shtech --type=falling
+# proposed model (AnyAomaly) -> Customizable-STC
+python -u vad_proposed_chatunivi.py --dataset=shtech --type=falling 
+# proposed model (AnyAomaly) -> STC
+python -u ovad_proposed_chatunivi.py --dataset=shtech
+```
+
+## 2. Requirements and Installation For MiniCPM
+- ```MiniCPM```: [[GitHub]](https://github.com/OpenBMB/MiniCPM-V.git)
+- Install required packages:
+```bash
+git clone https://github.com/OpenBMB/MiniCPM-V.git
+cd MiniCPM-V
+conda create -n MiniCPM-V python=3.10 -y
+conda activate MiniCPM-V
+pip install -r requirements.txt
+
+# Download extra packages
+cd ../
+pip install -r requirements.txt
+```
+
+## Command
+- ```avenue type```: [too_close, bicycle, throwing, running, dancing]
+- ```shtech type```: [car, bicycle, fighting, throwing, hand_truck, running, skateboarding, falling, jumping, loitering, motorcycle]
+- ```model path```: MiniCPM-V-2_6, MiniCPM-V-2_6-int4, MiniCPM-Llama3-V-2_5, MiniCPM-Llama3-V-2_5-int4, MiniCPM-V-2, MiniCPM-V
+```Shell
+# Baseline model (MiniCPM) -> Customizable-STC
+python -u vad_MiniCPM.py --dataset=shtech --type=falling --model_path=MiniCPM-Llama3-V-2_5
+# proposed model (AnyAomaly) -> Customizable-STC
+python -u vad_proposed_MiniCPM.py --dataset=shtech --type=falling --model_path=MiniCPM-Llama3-V-2_5
+# proposed model (AnyAomaly) -> STC
+python -u ovad_proposed_MiniCPM.py --dataset=shtech
+```
+
