@@ -10,6 +10,10 @@ Comparison of the proposed model with the baseline. Both models perform C-VAD, b
 **Context-Aware VQA is a method that performs VQA by utilizing additional contexts that describe an image.** To enhance the object analysis and action understanding capabilities of LVLM, we propose Position Context and Temporal Context.<br/>  
 <img width="850" alt="fig-2" src="https://github.com/user-attachments/assets/272487fb-e626-47f7-b5d4-00b5119c84d3">  
 
+## Results
+Table present the **evaluation results on the C-ShT dataset**. The proposed model achieved performance improvements of **9.88%** over the baseline. Specifically, it showed improvements of **14.34%** in the action class, and **3.25%** in the appearance class.<br/>  
+<img width="850" alt="fig-3" src="https://github.com/user-attachments/assets/1118a4ad-cb1d-47db-be72-8602d8e8a6a2">  
+
 
 ## Qualitative Evaluation 
 - Anomaly Detection in diverse scenarios
