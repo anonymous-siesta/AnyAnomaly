@@ -8,7 +8,7 @@ Video Anomaly Detection (VAD) is a critical task in video analysis and surveilla
 ## Context-aware VQA
 Comparison of the proposed model with the baseline. Both models perform C-VAD, but the baseline operates with frame-level VQA, whereas the proposed model employs a segment-level Context-Aware VQA.
 **Context-Aware VQA is a method that performs VQA by utilizing additional contexts that describe an image.** To enhance the object analysis and action understanding capabilities of LVLM, we propose Position Context and Temporal Context.<br/>  
-<img width="850" alt="fig-2" src="https://github.com/user-attachments/assets/272487fb-e626-47f7-b5d4-00b5119c84d3">  
+<img width="850" alt="fig-2" src="https://github.com/user-attachments/assets/f0fbef97-693e-4e58-bbc2-d02ee4b89274">  
 
 ## Results
 Table 1 and Table 2 present **the evaluation results on the C-VAD datasets.** The proposed model achieved performance improvements of **9.88% and 13.65%** over the baseline on the C-ShT and C-Ave datasets, respectively. Specifically, it showed improvements of **14.34% and 8.2%** in the action class, and **3.25% and 21.98%** in the appearance class.<br/><br/>
