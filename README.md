@@ -59,11 +59,11 @@ pip install -r requirements.txt
 - ```avenue type```: [too_close, bicycle, throwing, running, dancing]
 - ```shtech type```: [car, bicycle, fighting, throwing, hand_truck, running, skateboarding, falling, jumping, loitering, motorcycle]
 ```Shell
-# Baseline model (Chat-UniVi) -> Customizable-STC
+# Baseline model (Chat-UniVi) → C-ShT
 python -u vad_chatunivi.py --dataset=shtech --type=falling
-# proposed model (AnyAomaly) -> Customizable-STC
+# proposed model (AnyAomaly) → C-ShT
 python -u vad_proposed_chatunivi.py --dataset=shtech --type=falling 
-# proposed model (AnyAomaly) -> STC
+# proposed model (AnyAomaly) → ShT
 python -u ovad_proposed_chatunivi.py --dataset=shtech
 ```
 
@@ -85,13 +85,11 @@ pip install -r requirements.txt
 ## Command
 - ```avenue type```: [too_close, bicycle, throwing, running, dancing]
 - ```shtech type```: [car, bicycle, fighting, throwing, hand_truck, running, skateboarding, falling, jumping, loitering, motorcycle]
-- ```model path```: MiniCPM-V-2_6, MiniCPM-V-2_6-int4, MiniCPM-Llama3-V-2_5, MiniCPM-Llama3-V-2_5-int4, MiniCPM-V-2, MiniCPM-V
-```Shell
-# Baseline model (MiniCPM) -> Customizable-STC
+# Baseline model (MiniCPM) → C-ShT
 python -u vad_MiniCPM.py --dataset=shtech --type=falling --model_path=MiniCPM-Llama3-V-2_5
-# proposed model (AnyAomaly) -> Customizable-STC
+# proposed model (AnyAomaly) → C-ShT
 python -u vad_proposed_MiniCPM.py --dataset=shtech --type=falling --model_path=MiniCPM-Llama3-V-2_5
-# proposed model (AnyAomaly) -> STC
+# proposed model (AnyAomaly) → ShT
 python -u ovad_proposed_MiniCPM.py --dataset=shtech
 ```
 
