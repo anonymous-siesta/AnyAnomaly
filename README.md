@@ -1,5 +1,15 @@
-# AnyAnomaly
-AnyAnomaly: Zero-Shot Customizable Video Anomaly Detection with LVLM
+# AnyAnomaly: Zero-Shot Customizable Video Anomaly Detection with LVLM 
+This paper has been submitted to ICCV '25.
+
+## Description
+Video Anomaly Detection (VAD) is a critical task in video analysis and surveillance within computer vision. However, existing VAD models rely on learned normal patterns, making them difficult to apply across diverse environments. As a result, users must retrain models or develop separate AI models for new environments, which requires expertise in machine learning, high-performance hardware, and extensive data collection, limiting the practical usability of VAD. **To address these challenges, this study proposes Customizable Video Anomaly Detection (C-VAD) and the AnyAnomaly model. C-VAD considers user-defined text as an abnormal event and detects frames containing the specified event in a video.** We implement C-VAD effectively using a Context-aware VQA approach without fine-tuning a Large Vision Language Model (LVLM). To validate the effectiveness of the proposed model, we constructed a C-VAD dataset and demonstrated the superiority of AnyAnomaly. Furthermore, despite adopting a zero-shot approach, our method achieves competitive performance on VAD benchmarks. The code for this study will be released after publication.<br/><br/>
+<img width="850" alt="fig-1" src="https://github.com/user-attachments/assets/938d46a3-56cc-4cd4-8900-84bdfbd64b98">  
+
+## Context-aware VQA
+Comparison of the proposed model with the baseline. Both models perform C-VAD, but the baseline operates with frame-level VQA, whereas the proposed model employs a segment-level Context-Aware VQA.
+**Context-Aware VQA is a method that performs VQA by utilizing additional contexts that describe an image.** To enhance the object analysis and action understanding capabilities of LVLM, we propose Position Context and Temporal Context.<br/>  
+<img width="850" alt="fig-2" src="https://github.com/user-attachments/assets/272487fb-e626-47f7-b5d4-00b5119c84d3">  
+
 
 ## Qualitative Evaluation 
 - Anomaly Detection in diverse scenarios
