@@ -81,7 +81,7 @@ python -u vad_chatunivi.py --dataset=shtech --type=falling
 # proposed model (AnyAomaly) → C-ShT
 python -u vad_proposed_chatunivi.py --dataset=shtech --type=falling
 # proposed model (AnyAnomaly) → C-ShT, diverse anomaly scenarios
-!python -u vad_proposed_chatunivi.py --dataset=shtech --multiple=True --type=jumping-falling-pickup
+python -u vad_proposed_chatunivi.py --dataset=shtech --multiple=True --type=jumping-falling-pickup
 ```
 
 ## 2. Requirements and Installation For MiniCPM
@@ -106,6 +106,6 @@ python -u vad_MiniCPM.py --dataset=shtech --type=falling
 # proposed model (AnyAomaly) → C-ShT
 python -u vad_proposed_MiniCPM.py --dataset=shtech --type=falling 
 # proposed model (AnyAnomaly) → C-ShT, diverse anomaly scenarios
-!python -u vad_proposed_MiniCPM.py --dataset=shtech --multiple=True --type=jumping-falling-pickup
+python -u vad_proposed_MiniCPM.py --dataset=shtech --multiple=True --type=jumping-falling-pickup
 ```
 
