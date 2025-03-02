@@ -44,7 +44,7 @@ Table 1 and Table 2 present **the evaluation results on the C-VAD datasets (C-Sh
 |[Official Site](https://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html)|[Official Site](https://svip-lab.github.io/dataset/campus_dataset.html)
 
 
-## 1. Requirements and Installation For ChatUniVi
+## 1. Requirements and Installation For Chat-UniVi
 - ```Chat-UniVi```: [[GitHub]](https://github.com/PKU-YuanGroup/Chat-UniVi)
 - weights: Chat-UniVi 7B [[Huggingface]](https://huggingface.co/Chat-UniVi/Chat-UniVi/tree/main), Chat-UniVi 13B [[Huggingface]](https://huggingface.co/Chat-UniVi/Chat-UniVi-13B/tree/main)
 - Install required packages:
@@ -84,7 +84,7 @@ python -u vad_proposed_chatunivi.py --dataset=shtech --type=falling
 python -u vad_proposed_chatunivi.py --dataset=shtech --multiple=True --type=jumping-falling-pickup
 ```
 
-## 2. Requirements and Installation For MiniCPM
+## 2. Requirements and Installation For MiniCPM-V
 - ```MiniCPM```: [[GitHub]](https://github.com/OpenBMB/MiniCPM-V.git)
 - Install required packages:
 ```bash
