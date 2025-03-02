@@ -101,7 +101,7 @@ pip install -r requirements.txt
 
 ## Command
 ```Shell
-# Baseline model (MiniCPM) → C-ShT
+# Baseline model (MiniCPM-V) → C-ShT
 python -u vad_MiniCPM.py --dataset=shtech --type=falling 
 # proposed model (AnyAomaly) → C-ShT
 python -u vad_proposed_MiniCPM.py --dataset=shtech --type=falling 
