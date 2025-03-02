@@ -60,13 +60,17 @@ pip install -r requirements.txt
 
 
 ## Command
-- ```Ave type```: [too_close, bicycle, throwing, running, dancing]
-- ```ShT type```: [car, bicycle, fighting, throwing, hand_truck, running, skateboarding, falling, jumping, loitering, motorcycle]
+- ```C-Ave type```: [too_close, bicycle, throwing, running, dancing]
+- ```C-ShT type```: [car, bicycle, fighting, throwing, hand_truck, running, skateboarding, falling, jumping, loitering, motorcycle]
+- ```C-Ave type (multiple)```: [throwing-too_close, running-throwing]
+- ```C-ShT type (multiple)```: [stroller-running, stroller-loitering, stroller-bicycle, skateboarding-bicycle, running-skateboarding, running-jumping, running-bicycle, jumping-falling-pickup, car-bicycle]
 ```Shell
 # Baseline model (Chat-UniVi) → C-ShT
 python -u vad_chatunivi.py --dataset=shtech --type=falling
 # proposed model (AnyAomaly) → C-ShT
-python -u vad_proposed_chatunivi.py --dataset=shtech --type=falling 
+python -u vad_proposed_chatunivi.py --dataset=shtech --type=falling
+# proposed model (AnyAnomaly) → C-ShT, diverse anomaly scenarios
+!python -u vad_proposed_chatunivi.py --dataset=shtech --multiple=True --type=jumping-falling-pickup
 ```
 
 ## 2. Requirements and Installation For MiniCPM
@@ -87,8 +91,10 @@ pip install -r requirements.txt
 ## Command
 ```Shell
 # Baseline model (MiniCPM) → C-ShT
-python -u vad_MiniCPM.py --dataset=shtech --type=falling --model_path=MiniCPM-Llama3-V-2_5
+python -u vad_MiniCPM.py --dataset=shtech --type=falling 
 # proposed model (AnyAomaly) → C-ShT
-python -u vad_proposed_MiniCPM.py --dataset=shtech --type=falling --model_path=MiniCPM-Llama3-V-2_5
+python -u vad_proposed_MiniCPM.py --dataset=shtech --type=falling 
+# proposed model (AnyAnomaly) → C-ShT, diverse anomaly scenarios
+!python -u vad_proposed_MiniCPM.py --dataset=shtech --multiple=True --type=jumping-falling-pickup
 ```
 
