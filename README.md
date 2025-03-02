@@ -85,7 +85,7 @@ python -u vad_proposed_chatunivi.py --dataset=shtech --multiple=True --type=jump
 ```
 
 ## 2. Requirements and Installation For MiniCPM-V
-- ```MiniCPM```: [[GitHub]](https://github.com/OpenBMB/MiniCPM-V.git)
+- ```MiniCPM-V```: [[GitHub]](https://github.com/OpenBMB/MiniCPM-V.git)
 - Install required packages:
 ```bash
 git clone https://github.com/OpenBMB/MiniCPM-V.git
