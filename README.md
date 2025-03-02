@@ -35,6 +35,15 @@ Table 1 and Table 2 present **the evaluation results on the C-VAD datasets.** Th
 | **Jaywalking** |![c2](https://github.com/user-attachments/assets/f6205335-bebc-4df2-bd40-d06cc62d2a56)|
 | **Walking<br/> drunk** |![c3](https://github.com/user-attachments/assets/eb450801-b700-419d-a920-2799553c2452)|
 
+## Datasets
+- We processed the Shanghai Tech Campus (ShT) and CUHK Avenue (Ave) datasets to create the labels for the C-ShT and C-Ave datasets. These labels can be found in the ```ground_truth``` folder. **To test the C-ShT and C-Ave datasets, you need to first download the ShT and Ave datasets and store them in the directory corresponding to ```'data_root'```.**
+- You can specify the dataset's path by editing ```'data_root'``` in ```config.py```.
+  
+|     CUHK Avenue    | Shnaghai Tech.    |
+|:------------------------:|:-----------:|
+|[Official Site](https://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html)|[Official Site](https://svip-lab.github.io/dataset/campus_dataset.html)
+
+
 ## 1. Requirements and Installation For ChatUniVi
 - ```Chat-UniVi```: [[GitHub]](https://github.com/PKU-YuanGroup/Chat-UniVi)
 - weights: Chat-UniVi 7B [[Huggingface]](https://huggingface.co/Chat-UniVi/Chat-UniVi/tree/main), Chat-UniVi 13B [[Huggingface]](https://huggingface.co/Chat-UniVi/Chat-UniVi-13B/tree/main)
