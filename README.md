@@ -31,8 +31,8 @@ Table 1 and Table 2 present **the evaluation results on the C-VAD datasets (C-Sh
 |         Text              |Demo  |
 |:--------------:|:-----------:|
 | **Driving outside<br/> lane** |![c4](https://github.com/user-attachments/assets/4996b407-0ca1-4232-85d6-1f5efbad4ab5)|
-| **People and car<br/> accident** |![c1](https://github.com/user-attachments/assets/eed1252a-59dd-412c-ab3d-00b71d7bb852)|
-| **Jaywalking** |![c2](https://github.com/user-attachments/assets/f6205335-bebc-4df2-bd40-d06cc62d2a56)|
+| **People and car<br/> accident** |![c1](https://github.com/user-attachments/assets/2c5faa09-5141-471c-83ef-cee4c4574f5f)|
+| **Jaywalking** |![c2](https://github.com/user-attachments/assets/bc9b6789-0d71-4712-97b9-1007efaed273)|
 | **Walking<br/> drunk** |![c3](https://github.com/user-attachments/assets/eb450801-b700-419d-a920-2799553c2452)|
 
 ## Datasets
