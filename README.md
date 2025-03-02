@@ -36,7 +36,7 @@ Table 1 and Table 2 present **the evaluation results on the C-VAD datasets.** Th
 | **Walking<br/> drunk** |![c3](https://github.com/user-attachments/assets/eb450801-b700-419d-a920-2799553c2452)|
 
 ## Datasets
-- We processed the Shanghai Tech Campus (ShT) and CUHK Avenue (Ave) datasets to create the labels for the C-ShT and C-Ave datasets. These labels can be found in the ```ground_truth``` folder. **To test the C-ShT and C-Ave datasets, you need to first download the ShT and Ave datasets and store them in the directory corresponding to ```'data_root'```.**
+- We processed the Shanghai Tech Campus (ShT) and CUHK Avenue (Ave) datasets to create the labels for the C-ShT and C-Ave datasets. These labels can be found in the ```ground_truth``` folder. **To test the C-ShT and C-Ave datasets, you need to first download the ShT and Ave datasets and store them in the directory corresponding to** ```'data_root'```.
 - You can specify the dataset's path by editing ```'data_root'``` in ```config.py```.
   
 |     CUHK Avenue    | Shnaghai Tech.    |
