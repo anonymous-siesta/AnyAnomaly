@@ -13,7 +13,7 @@ Comparison of the proposed model with the baseline. Both models perform C-VAD, b
 <img width="850" alt="fig-2" src="https://github.com/user-attachments/assets/f0fbef97-693e-4e58-bbc2-d02ee4b89274">  
 
 ## Results
-Table 1 and Table 2 present **the evaluation results on the C-VAD datasets.** The proposed model achieved performance improvements of **9.88% and 13.65%** over the baseline on the C-ShT and C-Ave datasets, respectively. Specifically, it showed improvements of **14.34% and 8.2%** in the action class, and **3.25% and 21.98%** in the appearance class.<br/><br/>
+Table 1 and Table 2 present **the evaluation results on the C-VAD datasets (C-ShT, C-Ave).** The proposed model achieved performance improvements of **9.88% and 13.65%** over the baseline on the C-ShT and C-Ave datasets, respectively. Specifically, it showed improvements of **14.34% and 8.2%** in the action class, and **3.25% and 21.98%** in the appearance class.<br/><br/>
 <img width="850" alt="fig-3" src="https://github.com/user-attachments/assets/1118a4ad-cb1d-47db-be72-8602d8e8a6a2">  
 <img width="850" alt="fig-3" src="https://github.com/user-attachments/assets/c16bc817-8538-4503-bf38-85007c72a39a">  
 
